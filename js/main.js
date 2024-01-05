@@ -12,6 +12,8 @@
     // Caption
     $('.article-entry').each(function(i) {
         $(this).find('img').each(function() {
+            $(this).addClass('custom-img');
+
             if (this.alt && !(!!$.prototype.justifiedGallery && $(this).parent('.justified-gallery').length)) {
                 $(this).after('<span class="caption">' + this.alt + '</span>');
             }
